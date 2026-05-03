@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding | Flow State</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    <style>
+        body { background-color: #0a0a0a; color: #e5e5e5; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glow-text { text-shadow: 0 0 15px rgba(0, 255, 255, 0.5); }
+        .glow-border:hover { box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); border-color: rgba(168, 85, 247, 0.5); }
+        .vibe-gradient { background: linear-gradient(90deg, #06b6d4, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold vibe-gradient">VIBE_CODE</div>
+        <div class="space-x-8 hidden md:flex">
+            <a href="https://github.com" target="_blank" class="hover:text-cyan-400 transition">GitHub</a>
+            <a href="https://code.visualstudio.com" target="_blank" class="hover:text-purple-400 transition">VS Code</a>
+            <a href="https://netlify.com" target="_blank" class="hover:text-pink-400 transition">Netlify</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 glow-text">Flow State at <span class="vibe-gradient">100x</span></h1>
+        <p class="text-xl text-gray-400 mb-10 leading-relaxed">
+            Vibe Coding is the art of building software through intuition, high-level intent, and AI-orchestrated execution. Stop typing. Start vibing.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <button class="bg-purple-600 hover:bg-purple-500 text-white px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105">
+                Start Vibe Coding
+            </button>
+            <a href="https://github.com/codespaces" target="_blank" class="glass px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">
+                Open Codespace
+            </a>
+        </div>
+    </header>
+
+    <!-- Vibe Tracker -->
+    <section class="max-w-2xl mx-auto px-6 mb-20">
+        <div class="glass p-6 rounded-3xl text-center">
+            <p class="text-sm uppercase tracking-widest text-cyan-400 mb-2">Current Vibe Level</p>
+            <div class="text-4xl font-mono mb-4" id="vibe-percentage">98.2%</div>
+            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                <div id="vibe-bar" class="h-full bg-gradient-to-r from-cyan-500 to-purple-500 transition-all duration-1000" style="width: 98%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Cards -->
+    <main class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto px-6 mb-20">
+        <div class="glass p-8 rounded-3xl glow-border transition-all">
+            <i class="fas fa-brain text-cyan-400 text-3xl mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Intuition Over Syntax</h3>
+            <p class="text-gray-400">Forget the semicolons; focus on the vision. The AI handles the boilerplate while you handle the logic.</p>
+        </div>
+        <div class="glass p-8 rounded-3xl glow-border transition-all">
+            <i class="fas fa-wand-magic-sparkles text-purple-400 text-3xl mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">AI Symphony</h3>
+            <p class="text-gray-400">You are the conductor; the AI is the orchestra. Build complex systems with simple, natural language prompts.</p>
+        </div>
+        <div class="glass p-8 rounded-3xl glow-border transition-all">
+            <i class="fas fa-bolt text-pink-400 text-3xl mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">The Vibe Shift</h3>
+            <p class="text-gray-400">Rapid prototyping that keeps you in the creative flow. If it feels right, it is right.</p>
+        </div>
+    </main>
+
+    <!-- Ecosystem Links -->
+    <section class="py-10 border-t border-white/10 text-center">
+        <p class="text-gray-500 mb-6 uppercase tracking-widest text-xs">Powered by the Ecosystem</p>
+        <div class="flex justify-center gap-12 opacity-50 hover:opacity-100 transition-opacity">
+            <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github text-3xl"></i></a>
+            <a href="https://code.visualstudio.com" target="_blank" title="VS Code"><i class="fas fa-code text-3xl"></i></a>
+            <a href="https://netlify.com" target="_blank" title="Netlify"><i class="fas fa-cloud-upload-alt text-3xl"></i></a>
+        </div>
+    </section>
+
+    <footer class="p-10 text-center text-gray-600 text-sm">
+        Built in the Flow &copy; 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
